@@ -72,13 +72,13 @@
     <div class = "desc">
         <h3> 1. Audio Processing and Procedural Terrain Generation </h3>
         <p> Audio Files analyzed using python, numpy, scipy. First we read in a .wav file using python. </p>
-        <img src="Figure_1.png" />
+        <img src="site-images/Figure_1.png" />
         <p> Then we calculate our image dimensions, for example 500 * 500, and trim our array length so we are eveny divisible. After that we downsample the audio by taking the average over evenly divisible intervals, ending up with our array length being 500 * 500. Then we scale to rgb space 0-255.</p>
-        <img src="Figure_2.png" />
+        <img src="site-images/Figure_2.png" />
         <p>Then we encode the 1 dimension array into a 2 dimension format using a spiral algorithm moving inwards. This is so no information is lost on the edges of the photo.</p>
-        <img src="spiral.png"/><img src="Figure_3.png" />
+        <img src="site-images/spiral.png"/><img src="site-images/Figure_3.png" />
         <p> Lastly, we apply gaussian noise to the signal wave to smooth out terrain. Our final result is a heightmap written in pgm format. </p>
-        <img src="Figure_5.png" /> <img id = "map" src="map.png" />
+        <img src="site-images/Figure_5.png" /> <img id = "map" src="site-images/map.png" />
     </div>
 
    
