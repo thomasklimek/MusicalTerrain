@@ -47,7 +47,6 @@
         <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
         <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
         <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script>
-        <script src="sceneloader.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     </head>
 
@@ -168,22 +167,11 @@
         /******* End of the create scene function ******/    
 
         var menu = createMenu(); //Call the createScene function
-        var sceneNangs = new createScene1();
-        var sceneJohn = new createScene2();
-        var sceneElectric = new createScene3();
+
 
         // Register a render loop to repeatedly render the scene
         engine.runRenderLoop(function () { 
-            switch(sceneChoice){
-                case 0:
-                    menu.render(); break
-                case 1: 
-                    sceneNangs.render(); break
-                case 2: 
-                    sceneJohn.render(); break
-                case 3:
-                    sceneElectric.render(); break
-            }
+                menu.render();
         });
 
         // Watch for browser/canvas resize events
